@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chifumi ML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="shifumi.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">ShifumiML</a>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col s6" id="cam">
+    </div>
+    <div class="col s6">
+      <h4 id="playerSign">You did:</h4>
+      <h4 id="botSign">Bot did:</h4>
+      <h4 id="result">Result: Click on the play button to start</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4">
+      <h5 id="rock">Rock: 0%</h5>
+    </div>
+    <div class="col s4">
+      <h5 id="paper">Paper: 0%</h5>
+    </div>
+    <div class="col s4">
+      <h5 id="scissors">Scissors: 0%</h5>
+    </div>
+  </div>
+  <div class="fixed-action-btn" onclick="play()">
+    <a class="btn-floating btn-large red" id="playButton" style="font-size: large;">
+      <i class="large material-icons">play_arrow</i>
+    </a>
+  </div>
+</body>
+</html>
